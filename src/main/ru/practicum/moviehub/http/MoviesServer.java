@@ -27,6 +27,4 @@ public class MoviesServer {
         server.stop(0);
         System.out.println("Сервер остановлен");
     }
-
-
 }

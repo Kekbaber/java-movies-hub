@@ -15,7 +15,7 @@ public abstract class BaseHttpHandler implements HttpHandler {
         byte[] bytes = json.getBytes(StandardCharsets.UTF_8);
         ex.getResponseHeaders().set("Content-Type", CT_JSON);
         ex.sendResponseHeaders(status, bytes.length);
-        try(OutputStream os = ex.getResponseBody()) {
+        try (OutputStream os = ex.getResponseBody()) {
             os.write(bytes);
         }
     }
