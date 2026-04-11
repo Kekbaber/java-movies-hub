@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Movie {
     private long id;
-    private String title;
-    private int year;
+    private final String title;
+    private final int year;
 
     public Movie(long id, String title, int year) {
         this.id = id;
